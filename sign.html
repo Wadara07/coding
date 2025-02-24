@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up & Log In</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="icon">
+                <h4 class="logo">writers'<br>network</h4>
+            </div>
+
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" aria-label="Go to homepage">Home</a></li>
+                        <li><a href="service.html" aria-label="View our services">Services</a></li>
+                        <li><a href="about.html" aria-label="Learn more about us">About</a></li>
+                        <li><a href="contact.html" aria-label="Contact us">Contact</a></li>
+                        <li><a href="sign.html" aria-label="Sign up to join">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <div class="form-tabs">
+            <button class="tab-btn active" id="loginTab" onclick="toggleForm('login')">Log In</button>
+            <button class="tab-btn" id="signupTab" onclick="toggleForm('signup')">Sign Up</button>
+        </div>
+
+        <!-- Login Form -->
+        <div id="loginForm" class="form-content active">
+            <h2>Log In</h2>
+            <form action="/login" method="POST">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="email" required>
+
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div id="signupForm" class="form-content">
+            <h2>Sign Up</h2>
+            <form action="/signup" method="POST">
+                <label for="signupName">Name:</label>
+                <input type="text" id="signupName" name="name" required>
+
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" name="email" required>
+
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="password" required>
+
+                <label for="signupConfirmPassword">Confirm Password:</label>
+                <input type="password" id="signupConfirmPassword" name="confirmPassword" required>
+
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

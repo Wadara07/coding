@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Writers' Network - A community for writers to connect, collaborate, and grow.">
+    <title>About Us - Writers' Network</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="icon">
+                <h4 class="logo">writers'<br>network</h4>
+            </div>
+
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" aria-label="Go to homepage">Home</a></li>
+                        <li><a href="service.html" aria-label="Explore our services">Services</a></li>
+                        <li><a href="about.html" aria-label="About Writers' Network">About</a></li>
+                        <li><a href="contact.html" aria-label="Contact us">Contact</a></li>
+                        <li><a href="sign.html" aria-label="Sign up to join">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+        <div>
+            <h2>Contact Us</h2>
+            <form action="/submit_form" method="POST">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject" required><br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>  
+        </div>
+    <footer>
+        <p>&copy; 2025 Writers' Network | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
